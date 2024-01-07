@@ -10,7 +10,6 @@ int main(int argc, char* argv[]) {
 
     std::string path = argv[1];
     int size = atoi(argv[2]);
-    //std::cout << path << "\t" << size << std::endl;
 
     int fd = open(path.c_str(), O_RDONLY);
     if (fd == -1) {
